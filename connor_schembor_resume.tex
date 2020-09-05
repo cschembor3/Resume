@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://cschembor3.github.io./}{\Large  Connor Schembor}} & Email : \href{mailto:connor.schembor@gmail.com}{connor.schembor@gmail.com}\\
+  \href{https://cschembor3.github.io/}{https://cschembor3.github.io} & Mobile : +1-732-320-8080 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University}{New Brunswick, NJ}
+      {Bachelor of Science in Computer Science;  GPA: 4.00}{2016 --  2018}
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Candidate for Bachelor of Science in Computer Science;  GPA: 3.80}{2014 --  2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {WorkWave}{Holmdel, NJ}
+      {Software Engineer}{Aug. 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Stuff}
+          {blah blah blah....will fill this in later}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Chubb}{Jersey City, NJ}
+      {Junior Backend Developer}{Jul. 2018 - Aug. 2019}
+      \resumeItemListStart
+        \resumeItem{APIs}
+          {Worked on the API development team to create efficient APIs and microservices using Csharp with .NET Framework / .NET Core.}
+        \resumeItem{Datastore}
+          {Developed an interface to query Cosmo DB (document store) for customer registration information.}
+        \resumeItem{Monitoring}
+          {Worked with Microsoft Azure to deploy/maintain hosted APIs and track API requests to monitor system/dependency health.}
+      \resumeItemListEnd
+
+	 \resumeSubheading
+      {AT\&T Labs}{Middletown, NJ}
+      {Technical Intern}{May. 2017 - Aug. 2017}
+      \resumeItemListStart
+        \resumeItem{Network Virtualization}
+          {Worked on the Mobile Core team, assisting in network virtualization. Worked with the Head orchestration service, using OpenStack API calls and Heat Orchestration Templates to define and create different virtual network functions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graph Theory Research}{Remote}
+      {Student Researcher}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{Partially Ordered Sets}
+          {Worked with a professor from Johns Hopkins University to implement the SimplePosetDrawings module, which graphs partially ordered sets for a graph library in Julia.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{NoHitter Bot}
+      {Created a bot that parses an MLB data sheet and checks to see if there are any pitchers currently throwing a "no-hitter" through the sizth inning, and then tweets out if there is one. Worked with Python, the Twitter API, and the BeautifulSoup module.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{: C\#, C, Experience with Java, Python, Julia}
+    \resumeSubItem{Tools}{: .NET Core, Microsoft Azure, XUnit, Git, Document Databases, Linux, OpenStack}
+    \resumeSubItem{Software}{: Visual Studio 2019, Postman, Vim, Visual Studio Code}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
